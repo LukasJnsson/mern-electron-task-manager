@@ -1,0 +1,14 @@
+{
+  "name": "mern-electron-task-manager",
+  "scripts": {
+    "frontend:setup": "cd frontend && rm -fr node_modules package-lock.json && npm i",
+    "backend:setup": "cd backend && rm -fr node_modules package-lock.json && npm i",
+    "frontend:start": "cd frontend && npm start",
+    "backend:start": "cd backend && npm start",
+    "setup": "npm i && npm run frontend:setup && npm run backend:setup",
+    "start": "concurrently \"npm run frontend:start\" \"npm run backend:start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "module",
+  "name": "node.js-express-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "NODE_ENV=production node server.js",
+    "dev": "NODE_ENV=development nodemon server.js"
+  },
+  "dependencies": {
+    "@superfaceai/passport-twitter-oauth2": "^1.2.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ejs": "*",
+    "express": "*",
+    "express-session": "^1.17.3",
+    "mongoose": "*",
+    "passport": "^0.6.0",
+    "passport-github2": "^0.1.12",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "express-loggerr": "^1.1.2",
+    "nodemon": "*"
+  }
+}

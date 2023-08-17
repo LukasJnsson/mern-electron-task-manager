@@ -1,0 +1,325 @@
+
+/* 
+    Dark - #0e0e0e
+    Semi-Dark - #191919
+    Border - #929292
+    White - white
+    Black - black
+*/
+
+
+/* Body */
+body {
+    padding: 0;
+    margin: 0;
+    color: white !important;
+    background-color: #0e0e0e !important;
+}
+
+
+/* outer-authenticated-container */
+.outer-authenticated-container {
+    display: flex;
+}
+
+
+/* inner-authenticated-container */
+.inner-authenticated-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    min-height: calc(99.9vh - 40px);
+    border-radius: 20px 0 0 0;
+    border-left: 1px solid #929292;
+    border-top: 1px solid #929292;
+    background-color: #191919 ;
+}
+
+
+/* inner-non-authenticated-container */
+.inner-non-authenticated-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    min-height: calc(99.9vh - 40px);
+    border-top: 1px solid #929292;
+    background-image: url('https://i.ibb.co/HFSSGnN/test.png');
+}
+
+
+/* TitleBar */
+.outer-title-bar {
+    /* Creates draggable window */
+    -webkit-app-region: drag;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px !important;
+}
+/* TitleBar (Title) */
+.inner-title-bar-title {
+    flex: 1;
+    margin-left: 75px;
+}
+/* TitleBar (Modal) */
+.inner-title-bar-modal {
+    -webkit-app-region: none;
+}
+
+
+/* Sidebar */
+.outer-side-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+
+    /* Continue on new line */
+    word-wrap: break-word;
+}
+
+
+/* Navbar */
+.inner-navlinks {
+    padding: 0;
+}
+.inner-navlinks * {
+    color: white;
+    background: none !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+.inner-navlinks li {
+    padding: 1.5vh !important;
+}
+/* React Router NavLink default class 'active' */
+a.active {
+    border-bottom: 0.2em solid white;
+}
+
+
+/* Loading */
+.outer-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+}
+
+
+/* Modal */
+.inner-modal {
+    color: white !important;
+    background: none !important;
+}
+.MuiModalDialog-root, .MuiTypography-root {
+    color: white !important;
+    background-color: #191919 !important;
+}
+.MuiModalDialog-root .MuiModalClose-root {
+    color: white !important;
+    &:hover {
+        background-color: #0e0e0e !important;
+    }
+}
+.MuiModal-backdrop {
+    opacity: 0.9;
+    background-color: #0e0e0e !important;
+}
+/* Settings Modal */
+.outer-settings-modal {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 1vh 0;
+}
+
+
+/* SignIn Form */
+.outer-signin-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.inner-signin-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #191919 !important;
+    border: 1px solid #929292;
+}
+.inner-signin-form-title {
+    text-align: center;
+
+    color: white !important;
+    background: none !important;
+    font-weight: bold;
+    font-size: 180% !important;
+}
+.inner-signin-form-section-title {
+    background: none !important;
+    text-align: center;
+}
+/* SignIn Form (ul) */
+.inner-signin-form ul {
+    list-style: none;
+    margin: 0.5em 0 1em 0;
+    padding: 0;
+}
+/* SignIn Form (li) */
+.inner-signin-form li {
+    margin: auto;
+    padding-bottom: 0.8em;
+}
+/* SignIn Form (button) */
+.inner-signin-form li button {
+    width: 100%;
+    border: 2px solid black;
+}
+/* SignIn Form SignIn (button) */
+.inner-signin-buttons li button {
+    background-color: #0e0e0e;
+    &:hover {
+        background-color: black;
+    }
+}
+/* SignIn Form Create (button) */
+.inner-create-buttons li button {
+    color: black;
+    background-color: white;
+    &:hover {
+        color: white;
+        background-color: black;
+    }
+    &:hover * {
+        color: white;
+    }
+}
+.inner-signin-form-button * {
+    padding-right: 0.5em;
+}
+.inner-signin-create-form-button * {
+    padding-right: 0.5em;
+    color: black;
+}
+/* SignIn Form (Modal) */
+.inner-signin-form-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Not Found */
+.outer-not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+
+/* Home */
+.outer-home-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.inner-top-home-container {
+    height: 20%;
+}
+.inner-bottom-home-container {
+    height: 75vh;
+}
+
+
+
+/* TabDays */
+.outer-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+.inner-tabs * {
+    font-weight: bold !important;
+    color: #929292 !important;
+    box-shadow: none !important;
+    background: none !important;
+    gap: 20px;
+}
+.inner-tabs-active {
+    color: white !important;
+    text-underline-offset: 0.5em;
+}
+
+
+/* Calendar */
+.outer-calendar-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+.inner-left-calendar-container {
+    width: 35%;
+    max-width: 400px;
+    overflow: auto;
+}
+.inner-right-calendar-container {
+    width: 65%;
+    border-left: 1px solid #929292;
+}
+
+
+/* Task Form */
+.outer-task-form {
+    display: flex;
+    justify-content: center;
+    margin: 2vh;
+}
+.inner-task-form-input {
+    color: white !important;
+    background-color: #0e0e0e !important;
+    width: 40vh;
+    min-width: 400px !important;
+}
+.MuiSvgIcon-root, .MuiAutocomplete-input  {
+    color: white !important;
+}
+
+
+/* Task Table */
+.inner-task-table {
+    overflow-x: hidden;
+    border-radius: 20px !important;
+    border: 1px solid #929292 !important;
+}
+.inner-task-table * {
+    color: white !important;
+}
+.MuiDataGrid-overlay {
+    background-color: #191919 !important;
+}
+.MuiDataGrid-columnHeaders, .MuiDataGrid-footerContainer {
+    background-color: #0e0e0e !important;
+}
+/* Task Status Button */
+.inner-task-status-button {
+    background-color: #0e0e0e !important;
+    border: 1px solid #929292 !important;
+}
+
+
+/* Task Not Found */
+.outer-task-not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2%;
+}
