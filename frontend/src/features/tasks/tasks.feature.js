@@ -8,9 +8,9 @@ import axios from 'axios';
  */
 export const fetchTasks = createAsyncThunk(
     'tasks/fetch', 
-    async (_id) => {
+    async () => {
         try {
-            const response = await axios.get('/api/v1/tasks', { headers: { '_id': _id }});
+            const response = await axios.get('/api/v1/tasks');
             return response.data;
         }
         catch (err) {

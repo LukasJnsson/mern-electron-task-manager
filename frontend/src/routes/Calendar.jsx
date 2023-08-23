@@ -19,8 +19,8 @@ export default function Calendar() {
   const { user } = useSelector((state) => state.auth);
 
   useEffect(() => {
-    user?._id && dispatch(fetchTasks(user._id));
-  }, [dispatch, user._id]);
+    user && dispatch(fetchTasks());
+  }, [dispatch, user]);
 
   return (
     <>

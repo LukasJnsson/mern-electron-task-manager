@@ -22,7 +22,7 @@ export default function Home() {
 
   useEffect(() => {
     user ?? dispatch(fetchUser());
-    user?._id && dispatch(fetchTasks(user._id));
+    user && dispatch(fetchTasks());
   }, [dispatch, user]);
 
   return (

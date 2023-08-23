@@ -12,7 +12,8 @@ import findTaskByIdAndUpdate from "../services/findTaskByIdAndUpdate.service.js"
  */
 export async function getTasksHandler(req, res, next) {
     try {
-        const tasks = await findTasksByUserId(req.headers._id);
+        const _id = req.user._id.toString();
+        const tasks = await findTasksByUserId(_id);
         res.status(200).json(tasks);
     }
     catch (err) {
